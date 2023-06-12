@@ -52,7 +52,7 @@ function EmailVerificationForm({ onEmailVerification }) {
         In order to achieve a better comunication between all the participants
         of LifapassB, you are required to provide the email you used to register
         on dbm.academy. If you haven't already registered to DBM, please click{" "}
-        <a href="https://www.dbm.education/purchase/145747-DBM-Academy-Basic-Membership">
+        <a href="https://www.dbm.education/purchase/186319-DBM-Academy-Basic-Membership">
           here
         </a>{" "}
         and sign up a Free account.
