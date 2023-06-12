@@ -159,8 +159,11 @@ database
     }
 
     // Set the port to listen on
-    app.listen(3000, function () {
+    app.listen(process.env.PORT || 3000, function () {
       console.log("App is listening on port 3000!");
     });
   })
   .catch((error) => console.error("Failed to connect to database: ", error));
+
+// Export the Express APi for Vercel
+module.exports = app;
