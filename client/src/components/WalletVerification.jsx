@@ -60,7 +60,7 @@ function WalletVerification({ userDetails }) {
           setSignDisabled(false);
         } else {
           setStatus(
-            "Your wallet is not on the allowed list, please connect the wallet you used to participate on LifepassB"
+            "Your wallet is not on the allowed list, please connect the wallet you used to participate on the TEAMFUND you are validating."
           );
         }
       } catch (error) {
@@ -81,7 +81,7 @@ function WalletVerification({ userDetails }) {
 
     try {
       const message =
-        "I am responsible for this wallet and I authorize this wallet to receive payouts from the LifepassB Fund.";
+        "I am responsible for this wallet and I authorize this wallet to receive payouts from the TEAMFUND.";
       const signature = await tronWeb.trx.signMessageV2(message);
 
       const verifiedAddress = await tronWeb.trx.verifyMessageV2(
@@ -113,16 +113,16 @@ function WalletVerification({ userDetails }) {
       <img src={logo1} alt="DBM Academy" className="logo-top-left" />
       <p className="welcomeMessage">
         Hello <strong>{userDetails.firstNames}</strong>, In order to protect and
-        verify all the participants in the Lifepass B fund, we require you to
-        sign a message with your wallet, this way you are 100% sure you can
-        receive and have access to your money and we can safely proceed with the
-        payout in few days.
+        verify all the participants in the TEAMFUND, we require you to sign a
+        message with your wallet, this way you are 100% sure you can receive and
+        have access to your money and we can safely proceed with the payout in
+        few days.
       </p>
       <p className="welcomeMessage">
         The message you will sign with your wallet is:{" "}
         <strong>
           I am responsible for this wallet and I authorize this wallet to
-          receive payouts from the LifepassB Fund.
+          receive payouts from TEAMFUND.
         </strong>
       </p>
       <div className="buttons">
@@ -143,15 +143,7 @@ function WalletVerification({ userDetails }) {
         <p>{status}</p>
       </div>
       {walletVerified && (
-        <p>
-          Congratulations, you just secured your next payout.
-          <br />
-          You can now join the{" "}
-          <a href="https://t.me/+A8ThlSBvLPZhMTlk">
-            LifepassB payouts Telegram Group here
-          </a>{" "}
-          for further details.
-        </p>
+        <p>Congratulations, you just secured your next payout.</p>
       )}
     </div>
   );
