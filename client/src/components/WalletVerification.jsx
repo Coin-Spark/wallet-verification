@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"; // import axios to make HTTP requests
 import logo1 from "../images/dbm.png";
-import logo2 from "../images/prospera.png";
 
 function WalletVerification({ userDetails }) {
   const [tronWeb, setTronWeb] = useState(null);
@@ -112,7 +111,6 @@ function WalletVerification({ userDetails }) {
   return (
     <div className="container">
       <img src={logo1} alt="DBM Academy" className="logo-top-left" />
-      <img src={logo2} alt="Prospera Global" className="logo-top-right" />{" "}
       <p className="welcomeMessage">
         Hello <strong>{userDetails.firstNames}</strong>, In order to protect and
         verify all the participants in the Lifepass B fund, we require you to
