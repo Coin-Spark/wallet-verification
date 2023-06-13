@@ -10,17 +10,6 @@ function EmailVerificationForm({ onEmailVerification }) {
   const verifyEmail = async () => {
     setStatus("Verifying email...");
     try {
-<<<<<<< HEAD
-      const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/find-contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: email,
-        }),
-      });
-=======
       const response = await fetch(
         `${process.env.REACT_APP_SERVER_URL}/find-contact`,
         {
@@ -33,7 +22,6 @@ function EmailVerificationForm({ onEmailVerification }) {
           }),
         }
       );
->>>>>>> bf9616d (.)
 
       const data = await response.json();
 
