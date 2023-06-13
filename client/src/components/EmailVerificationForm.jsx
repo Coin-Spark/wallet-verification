@@ -11,7 +11,7 @@ function EmailVerificationForm({ onEmailVerification }) {
     setStatus("Verifying email...");
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_SERVER_URL}find-contact`,
+        `${process.env.REACT_APP_SERVER_URL}/find-contact`,
         {
           method: "POST",
           headers: {
