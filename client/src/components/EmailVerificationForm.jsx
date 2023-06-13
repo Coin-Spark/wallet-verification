@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo1 from "../images/dbm.png";
-import logo2 from "../images/prospera.png";
 
 function EmailVerificationForm({ onEmailVerification }) {
   const [email, setEmail] = useState("");
@@ -46,7 +45,6 @@ function EmailVerificationForm({ onEmailVerification }) {
   return (
     <div className="container">
       <img src={logo1} alt="DBM Academy" className="logo-top-left" />
-      <img src={logo2} alt="Prospera Global" className="logo-top-right" />{" "}
       <h1>Lifepass B Payouts Wallet Verification</h1>
       <p className="welcomeMessage">
         This simple procedure aim to verify that you have access to your

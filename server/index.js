@@ -147,7 +147,7 @@ database
     try {
       // Check if the wallet already exists
       const existingWallet = await Wallet.findOne({
-        wallet: walletData.address,
+        wallet: walletData.wallet,
       });
       if (!existingWallet) {
         const newWallet = new Wallet(walletData);
