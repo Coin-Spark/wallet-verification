@@ -10,7 +10,7 @@ function EmailVerificationForm({ onEmailVerification }) {
   const verifyEmail = async () => {
     setStatus("Verifying email...");
     try {
-      const response = await fetch("/find-contact", {
+      const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/find-contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
