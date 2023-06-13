@@ -47,17 +47,17 @@ function EmailVerificationForm({ onEmailVerification }) {
       <img src={logo1} alt="DBM Academy" className="logo-top-left" />
       <h1>TEAMFUND Payouts Wallet Verification</h1>
       <p className="welcomeMessage">
-        This simple procedure aim to verify that you have access to your
+        This simple procedure aims to verify that you have access to your
         Tronlink Wallet before payouts will be sent.
         <br />
         In order to achieve a better comunication between all the participants
         of the TeamFund, you are required to provide the email you used to
-        register on dbm.academy. If you haven't already registered to DBM,
-        please click{" "}
+        register on dbm.academy. <br />
+        If you haven't already registered to DBM, please click{" "}
         <a href="https://www.dbm.education/purchase/186319-DBM-Academy-Basic-Membership">
           here
         </a>{" "}
-        and sign up a Free account.
+        and sign up a free account.
       </p>
       <input
         type="email"
