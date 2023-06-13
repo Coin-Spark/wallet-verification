@@ -116,7 +116,7 @@ function WalletVerification({ userDetails }) {
         verify all the participants in the TEAMFUND, we require you to sign a
         message from your Tronlink wallet, this way you are 100% sure you can
         receive and have access to your money and we can safely proceed with the
-        payout in few days.
+        payout in a few days.
       </p>
       <p className="welcomeMessage">
         The message you will sign with your wallet is:{" "}
