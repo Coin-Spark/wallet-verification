@@ -145,7 +145,8 @@ function WalletVerification({ userDetails }) {
       {walletVerified && (
         <p>
           Congratulations, you just secured your next payout. If you have
-          another wallet address
+          another wallet address linked to another TEAMFUND, please repeat the
+          process by refreshing this page.
         </p>
       )}
     </div>
