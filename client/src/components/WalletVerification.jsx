@@ -91,7 +91,7 @@ function WalletVerification({ userDetails }) {
 
       if (verifiedAddress === tronWeb.defaultAddress.base58) {
         setWalletVerified(true);
-        setStatus("Signed Message: " + signature + "\n" + "Message Verified");
+        setStatus("Signed Message: " + message + "\n" + "Message Verified");
         await axios.post(process.env.REACT_APP_SERVER_URL + "/verify-wallet", {
           wallet: tronWeb.defaultAddress.base58,
           isVerified: true,
@@ -143,7 +143,10 @@ function WalletVerification({ userDetails }) {
         <p>{status}</p>
       </div>
       {walletVerified && (
-        <p>Congratulations, you just secured your next payout.</p>
+        <p>
+          Congratulations, you just secured your next payout. If you have
+          another wallet address
+        </p>
       )}
     </div>
   );
