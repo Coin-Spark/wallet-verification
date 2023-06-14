@@ -5,7 +5,7 @@ import logo1 from "../images/dbm.png";
 
 function WalletVerification({ userDetails }) {
   const [tronWeb, setTronWeb] = useState(null);
-  const [status, setStatus] = useState(`Please connect yout Tronlink Wallet`);
+  const [status, setStatus] = useState(`Please connect your Tronlink Wallet`);
   const [signDisabled, setSignDisabled] = useState(true);
   const [walletVerified, setWalletVerified] = useState(false);
 

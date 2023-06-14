@@ -53,11 +53,8 @@ function EmailVerificationForm({ onEmailVerification }) {
         In order to achieve a better comunication between all the participants
         of the TeamFund, you are required to provide the email you used to
         register on dbm.academy. <br />
-        If you haven't already registered to DBM, please click{" "}
-        <a href="https://www.dbm.education/purchase/186319-DBM-Academy-Basic-Membership">
-          here
-        </a>{" "}
-        and sign up a free account.
+        If you haven't already registered to DBM, please follow the instructions
+        on top of the page and sign up a free account.
       </p>
       <input
         type="email"
