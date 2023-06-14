@@ -47,8 +47,8 @@ function EmailVerificationForm({ onEmailVerification }) {
       <img src={logo1} alt="DBM Academy" className="logo-top-left" />
       <h1>TEAMFUND Payouts Wallet Verification</h1>
       <h2>
-        Please make sure you have connection to your tronlink wallet before to
-        proceed.
+        Before proceeding please ensure you are operating this Dapp in the same
+        Browser as where you have access to your Tronlink
       </h2>
       <p className="welcomeMessage">
         This simple procedure aims to verify that you have access to your

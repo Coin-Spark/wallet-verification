@@ -120,6 +120,13 @@ input {
   text-align: center;
 }
 
+.container h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin: 0 20% 10px 20%;
+  text-align: center;
+}
+
 .walletStatus {
   font-size: 16px;
   margin-bottom: 20px;
