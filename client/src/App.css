@@ -8,7 +8,7 @@
   border-radius: 25px; /* rounded corners */
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* shadow effect */
   padding: 20px;
-  height: 500px;
+  max-height: 700px;
   width: 800px;
   margin: 0 auto;
 }
@@ -31,7 +31,6 @@ body {
 @media screen and (max-width: 600px) {
   .container {
     width: 90%;
-    height: 70vh;
     padding: 20px;
   }
 }
@@ -44,7 +43,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .title {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 
@@ -120,16 +119,30 @@ input {
   text-align: center;
 }
 
-.container h2 {
+@media screen and (max-width: 600px) {
+  .welcomeMessage {
+    margin: auto auto;
+    padding-bottom: 10px;
+  }
+}
+
+/* .container h2 {
   font-size: 20px;
   margin-bottom: 20px;
   margin: 0 20% 10px 20%;
   text-align: center;
-}
+} */
 
 .walletStatus {
   font-size: 16px;
   margin-bottom: 20px;
   margin: 0 20% 10px 20%;
   overflow-wrap: anywhere;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin: 0 10% 10px 10%;
+  text-align: center;
 }
