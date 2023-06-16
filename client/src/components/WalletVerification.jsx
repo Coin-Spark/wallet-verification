@@ -110,7 +110,7 @@ function WalletVerification({ userDetails }) {
 
   return (
     <div className="container">
-      <img src={logo1} alt="DBM Academy" className="logo-top-left" />
+      <img src={logo1} alt="DBM Academy" className="logo-top" />
       <p className="welcomeMessage">
         Hello <strong>{userDetails.firstNames}</strong>, In order to protect and
         verify all the participants in the TEAMFUND, we require you to sign a

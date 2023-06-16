@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo1 from "../images/dbm.png";
 
 function EmailVerificationForm({ onEmailVerification }) {
   const [email, setEmail] = useState("");
@@ -43,6 +44,7 @@ function EmailVerificationForm({ onEmailVerification }) {
 
   return (
     <div className="container">
+      <img src={logo1} alt="DBM Academy" className="logo-top" />
       <h1 className="title">TEAMFUND Payouts Wallet Verification</h1>
       <h2>
         Before proceeding please ensure you are operating this Dapp in the same
